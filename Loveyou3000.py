@@ -1,0 +1,12 @@
+a = int(input("Enter the number: "))
+
+for num in range(1, a+1):
+    c = 0
+    temp = num
+
+    for i in range(1, temp+1):
+        if temp % i == 0:
+            c += 1
+
+    if c == 2:
+        print(num)
